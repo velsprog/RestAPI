@@ -1,0 +1,56 @@
+HTTP/1.1 200 OK
+Server: AtlassianProxy/1.19.3.1
+vary: Accept-Encoding
+cache-control: no-cache, no-store, no-transform
+Content-Type: application/json;charset=UTF-8
+content-encoding: gzip
+Strict-Transport-Security: max-age=315360000; includeSubDomains; preload
+Date: Fri, 21 Jan 2022 13:08:30 GMT
+ATL-TraceId: f2face86c31e84b1
+x-arequestid: 604d5e6c-2861-40c7-a9ce-67dd83fe2724
+x-aaccountid: 5e91c453be041a0b78f96f99
+X-XSS-Protection: 1; mode=block
+Transfer-Encoding: chunked
+timing-allow-origin: *
+x-envoy-upstream-service-time: 205
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+set-cookie: atlassian.xsrf.token=975429e8-9be9-4e64-81b7-7a2450b5de63_379ecc14b0c50575757ed3ef0387848db422190d_lin; path=/; SameSite=None; Secure
+Expect-CT: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy", enforce, max-age=86400
+
+{
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "23306",
+    "self": "https://api-may2020.atlassian.net/rest/api/2/issue/23306",
+    "key": "RS-583",
+    "fields": {
+        "summary": "create issue in RS project with issue type is Bug",
+        "description": "Creating of an issue using project keys and issue type names using the REST API",
+        "fixVersions": [
+            {
+                "self": "https://api-may2020.atlassian.net/rest/api/2/version/10001",
+                "id": "10001",
+                "description": "Version1.0",
+                "name": "FixVersion1",
+                "archived": false,
+                "released": false,
+                "releaseDate": "2022-01-07"
+            },
+            {
+                "self": "https://api-may2020.atlassian.net/rest/api/2/version/10002",
+                "id": "10002",
+                "description": "Version1.1",
+                "name": "FixVersion2",
+                "archived": false,
+                "released": false,
+                "releaseDate": "2022-01-14"
+            }
+        ],
+        "priority": {
+            "self": "https://api-may2020.atlassian.net/rest/api/2/priority/3",
+            "iconUrl": "https://api-may2020.atlassian.net/images/icons/priorities/medium.svg",
+            "name": "Medium",
+            "id": "3"
+        }
+    }
+}

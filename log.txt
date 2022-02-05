@@ -1,0 +1,67 @@
+Request method:	GET
+Request URI:	https://api-may2020.atlassian.net/rest/api/2/issue/RS-583?fields=key&fields=name&fields=priority&fields=summary&fields=description&fields=fixVersions
+Proxy:			<none>
+Request params:	<none>
+Query params:	fields=[key, name, priority, summary, description, fixVersions]
+Form params:	<none>
+Path params:	key=RS-583
+Headers:		accept=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: AtlassianProxy/1.19.3.1
+vary: Accept-Encoding
+cache-control: no-cache, no-store, no-transform
+Content-Type: application/json;charset=UTF-8
+content-encoding: gzip
+Strict-Transport-Security: max-age=315360000; includeSubDomains; preload
+Date: Sat, 22 Jan 2022 03:24:06 GMT
+ATL-TraceId: a828d9d233c3fe9a
+x-arequestid: 6a2e4046-5a01-48c8-848c-e130fd1931ad
+x-aaccountid: 5e91c453be041a0b78f96f99
+X-XSS-Protection: 1; mode=block
+Transfer-Encoding: chunked
+timing-allow-origin: *
+x-envoy-upstream-service-time: 123
+X-Content-Type-Options: nosniff
+Connection: keep-alive
+set-cookie: atlassian.xsrf.token=975429e8-9be9-4e64-81b7-7a2450b5de63_9df97cc47c21535215a0dcdc84356280571c7cdb_lin; path=/; SameSite=None; Secure
+Expect-CT: report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/global-proxy", enforce, max-age=86400
+
+{
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "23306",
+    "self": "https://api-may2020.atlassian.net/rest/api/2/issue/23306",
+    "key": "RS-583",
+    "fields": {
+        "summary": "create issue in RS project with issue type is Bug",
+        "description": "Creating of an issue using project keys and issue type names using the REST API",
+        "fixVersions": [
+            {
+                "self": "https://api-may2020.atlassian.net/rest/api/2/version/10001",
+                "id": "10001",
+                "description": "Version1.0",
+                "name": "FixVersion1",
+                "archived": false,
+                "released": false,
+                "releaseDate": "2022-01-07"
+            },
+            {
+                "self": "https://api-may2020.atlassian.net/rest/api/2/version/10002",
+                "id": "10002",
+                "description": "Version1.1",
+                "name": "FixVersion2",
+                "archived": false,
+                "released": false,
+                "releaseDate": "2022-01-14"
+            }
+        ],
+        "priority": {
+            "self": "https://api-may2020.atlassian.net/rest/api/2/priority/3",
+            "iconUrl": "https://api-may2020.atlassian.net/images/icons/priorities/medium.svg",
+            "name": "Medium",
+            "id": "3"
+        }
+    }
+}

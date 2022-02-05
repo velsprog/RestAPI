@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="ContactTest">
+    <classes>
+      <class name="com.FullStackAutomation.RestAssured.SalesForce.CreateContacts"/>
+      <class name="com.FullStackAutomation.RestAssured.SalesForce.GetAllContacts"/>
+      <class name="com.FullStackAutomation.RestAssured.SalesForce.UpdateContacts"/>
+      <class name="com.FullStackAutomation.RestAssured.SalesForce.DeleteContacts"/>      
+    </classes>
+  </test> <!-- Test -->
+  
+    <test thread-count="5" name="LeadTest">
+    <classes>
+      <class name="com.FullStackAutomation.RestAssured.SalesForce.CreateLead"/>
+      <class name="com.FullStackAutomation.RestAssured.SalesForce.GetLead"/>
+      <class name="com.FullStackAutomation.RestAssured.SalesForce.UpdateLead"/>
+      <class name="com.FullStackAutomation.RestAssured.SalesForce.DeleteLead"/>      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
